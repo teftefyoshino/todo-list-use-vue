@@ -1,5 +1,9 @@
 <script setup lang="ts">
+import Counter from './components/Counter.vue';
 import MyPage from './components/MyPage.vue';
+import { useCounter } from './components/UseCounter';
+
+const counter = useCounter();
 
 </script>
 
@@ -13,6 +17,7 @@ import MyPage from './components/MyPage.vue';
     </a>
   </div>
   <router-view />
+  <Counter :counter="counter"/>
   <MyPage msg="Vite + Vue" />
 </template>
 
@@ -30,3 +35,4 @@ import MyPage from './components/MyPage.vue';
   filter: drop-shadow(0 0 2em #42b883aa);
 }
 </style>
+./components/UseCounter
