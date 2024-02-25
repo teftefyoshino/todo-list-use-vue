@@ -25,8 +25,13 @@ export class Logger {
     this.invoke('log', ...args)
   }
 
+  private prefixFormat(level: LogLevel) {
+      return `[${level.toUpperCase()}]`;
+  }
+
   private async invoke(level: LogLevel, ...args: any) {
-    console[level](...args)
+    const msgPrefix = this.prefixFormat(level);
+    console[level](msgPrefix, ...args);
   }
 }
 
