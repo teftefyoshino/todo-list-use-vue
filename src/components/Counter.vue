@@ -29,8 +29,8 @@ const onclick = () => {
     <div class="card">
       <button type="button" @click="onclick">count is {{ counter.count }}</button>
       <p>
-        Edit
-        <code>components/Counter.vue</code> to test HMR SAMPLE
+        Edit test
+        <code>components/Counter.vue</code> to test HMR
       </p>
     </div>
   </template>
