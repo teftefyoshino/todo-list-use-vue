@@ -18,6 +18,7 @@ const onclick = () => {
   log.info('info log');
   log.debug(`debug log: before count ${counter.count}`);
   counter.count++
+  counter.count++
   log.warn(`warn log: after count ${counter.count}`);
   log.error(`error log`);
 }
