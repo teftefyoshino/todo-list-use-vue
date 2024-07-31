@@ -18,6 +18,7 @@ const onclick = () => {
   log.info('info log');
   log.debug(`debug log: before count ${counter.count}`);
   counter.count++
+  counter.count++
   log.warn(`warn log: after count ${counter.count}`);
   log.error(`error log`);
 }
@@ -29,7 +30,7 @@ const onclick = () => {
       <button type="button" @click="onclick">count is {{ counter.count }}</button>
       <p>
         Edit
-        <code>components/Counter.vue</code> to test HMR
+        <code>components/Counter.vue</code> to test HMR SAMPLE
       </p>
     </div>
   </template>
